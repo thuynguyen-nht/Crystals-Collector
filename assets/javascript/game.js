@@ -8,19 +8,61 @@ $(document).ready(function () {
         max = Math.floor(max);
         randomNumber = Math.floor(Math.random() * (max - min)) + min;
         $("#RandomNumber").text(randomNumber);
+        return randomNumber;
     }
-    console.log(getRandomInt(19, 121));
+    getRandomInt(19, 121);
+    var checkNumber = getRandomInt(19, 121);
+
 
     //2. random number is generated for each crystals, from 1->12
-    $("btn1").on("click", function () {
+    function getRanNumCrystal(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        ranNumCrystal = Math.floor(Math.random() * (max - min)) + min;
+        return ranNumCrystal;
 
-    });
-
+    };
 
     //3. when user click on any of the crystals,
     //the number will be added to the total score number.
+    var ranNum1 = getRanNumCrystal(1, 13);
+    var ranNum2 = getRanNumCrystal(1, 13);
+    var ranNum3 = getRanNumCrystal(1, 13);
+    var ranNum4 = getRanNumCrystal(1, 13);
 
+    var totalNumber = [];
+    var sum;
 
+    $("#btn1").on("click", function () {
+        totalNumber.push(ranNum1);
+        console.log(totalNumber);
+
+    });
+
+    $("#btn2").on("click", function () {
+        totalNumber.push(ranNum2);
+        console.log(totalNumber);
+
+    });
+
+    $("#btn3").on("click", function () {
+        totalNumber.push(ranNum3);
+        console.log(totalNumber);
+
+    });
+
+    $("#btn4").on("click", function () {
+        totalNumber.push(ranNum4);
+        console.log(totalNumber);
+
+    });
+
+    $(".number").on("click", function () {
+        sum = totalNumber.reduce(function (accumulator, currentValue) {
+            return accumulator + currentValue;
+        }, 0);
+        $("#totalNumber").text(sum);
+    })
 
 
     //4. Everytime user clicked, the brower will check as if the total number is smaller or bigger.
