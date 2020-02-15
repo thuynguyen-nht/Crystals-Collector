@@ -1,3 +1,9 @@
+body {
+    background-color: #202442;
+    color: #F3F3F6;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 button {
     width: 100px;
     height: 100px;
@@ -9,4 +15,78 @@ button {
 button img {
     width: inherit;
 
+}
+
+#header {
+    color: #C7A5FF;
+    font-family: 'Odibee Sans', cursive;
+    font-weight: 500;
+    font-size: 8em;
+    text-shadow: 2px 2px #E5495B;
+}
+
+.jumbotron {
+    background-color: #5C28D7;
+}
+
+#instructionHeader {
+    background-color: #FF3D60;
+    font-weight: 900;
+    color: rgb(250, 160, 171);
+    font-size: 2em;
+}
+
+#instruction {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2D325A;
+    font-weight: 100;
+}
+
+aside.card {
+    border-color: #E24053;
+    box-shadow: 3px 3px 1px rgb(216, 52, 82);
+}
+
+#boxOfRandom {
+    border: solid 2px #4E7CFF;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px #E5495B;
+    background-color: rgb(40, 44, 73);
+}
+
+.boxOfCrystals {
+    border: solid 2px #FF7384;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#boxOfTotal {
+    border: solid 2px #4E7CFF;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px #E5495B;
+    background-color: rgb(40, 44, 73);
+
+}
+
+#winRow {
+    border: solid 2px #7BBB5E;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px #E5495B;
+    background-color: #7BBB5E;
+
+}
+
+#loseRow {
+    border: solid 2px #FFC54C;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px #E5495B;
+    background-color: #FFC54C;
 }
