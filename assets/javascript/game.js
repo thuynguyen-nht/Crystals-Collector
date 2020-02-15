@@ -28,6 +28,7 @@ $(document).ready(function () {
         // $(".number").empty();
         allNumbers = [];
         sumOfNumbers = 0;
+        $("#sumNumbers").html(0);
 
     };
 
